@@ -62,14 +62,9 @@ $config = [
                 'POST api/posts/<post_id:\d+>/comments' => 'comment/create',
                 'DELETE api/posts/<post_id:\d+>/comments/<comment_id:\d+>' => 'comment/delete',
 
-                'GET api/posts/tag/<tag_name:\w>' => 'post/get',
+                'GET api/posts/tag/<tag_name:\w>' => 'post/tag',
 
                 'POST api/auth' => 'user/auth',
-                /*[
-                    'class' => 'yii\rest\UrlRule',
-                    'controller' => 'user',
-                    'api/auth' => 'auth',
-                ]*/
             ],
         ],
 
